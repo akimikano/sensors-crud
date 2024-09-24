@@ -2,8 +2,7 @@ from starlette import status
 from fastapi import FastAPI, HTTPException
 
 from src.application.exceptions import ApplicationException, NotFound
-from src.infrastructure.webserver.routers import user_router, equipment_router, \
-    alert_router, data_router
+from src.infrastructure.webserver.routers import user_router, sensor_router
 
 app = FastAPI(
     title="API",
@@ -30,6 +29,4 @@ async def application_exception_handler(request, exc):
 
 
 app.include_router(user_router, prefix="/users")
-app.include_router(equipment_router, prefix="/equipments")
-app.include_router(alert_router, prefix="/alerts")
-app.include_router(alert_router, prefix="/data")
+app.include_router(sensor_router, prefix="/sensors")

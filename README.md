@@ -1,4 +1,4 @@
-# Equipment managing CRUD
+# Sensors managing CRUD
 
 
 ## Table of Contents
@@ -10,8 +10,8 @@
 
 ## Introduction
 RESTful API
-to manage a list of users and equipments. The API allows 
-users and equipments to be created, read, updated, and deleted. 
+to manage a list of users and sensors. The API allows 
+users and sensors to be created, read, updated, and deleted. 
 Basic authentication and authorization 
 for API access. The service is able to 
 process simultaneous requests from multiple 
@@ -93,63 +93,23 @@ GET _/users/profile/me_
 
 <br>
 
-#### Endpoints to manage equipment
+#### Endpoints to manage sensors
 
 GET
-_/equipments/ Get Equipments_
+_/sensors/ Get Sensors_
 
 
 POST
-_/equipments/ Create Equipment_
+_/sensors/ Create Sensor_
 
 
 GET
-_/equipments/{equipment_id} Get Equipment_
+_/sensors/{sensor_id} Get Sensor_
 
 
 PUT
-_/equipments/{equipment_id} Update Equipment_
+_/sensors/{sensor_id} Update Sensor_
 
 
 DELETE
-_/equipments/{equipment_id} Delete Equipment_
-
-
-GET
-_/alerts/ Get Equipment Alerts_
-
-
-POST
-_/alerts/ Create Equipment Alert_
-
-
-GET
-_/alerts/{alert_id} Get Equipment Alert_
-
-
-PUT
-_/alerts/{alert_id} Update Equipment Alert_
-
-
-DELETE
-_/alerts/{alert_id} Delete Equipment Alert_
-
-
-GET
-_/data/ Get Equipment Alerts_
-
-
-POST
-_/data/ Create Equipment Alert_
-
-
-GET
-_/data/{alert_id} Get Equipment Alert_
-
-
-PUT
-_/data/{alert_id} Update Equipment Alert_
-
-
-DELETE
-_/data/{alert_id} Delete Equipment Alert_
+_/sensors/{sensor_id} Delete Sensor_
